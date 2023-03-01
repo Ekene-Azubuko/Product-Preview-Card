@@ -1,0 +1,115 @@
+
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+* {
+    padding: 0px;
+    box-sizing: border-box;
+    margin: 0px;
+}
+body{
+    background-color:  hsl(30, 38%, 92%);
+}
+body p {
+    font-size: 14px;
+}
+
+
+/* Align */
+
+.description {
+    float: right;
+    width: 50%;
+    background-color: hsl(0, 0%, 100%);
+    padding: 32px 30px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+/* arrange */
+.mobile{
+    display: none;
+    
+}
+/* width */
+.product {
+    width: 50%;
+    margin: 80px auto 0 auto;
+    border-radius: 10px;
+}
+.desktop {
+    width: 50%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+/* Design */
+
+h1{
+    font-family: 'Fraunces', serif;
+}
+.price {
+    font-family: 'Fraunces', serif;
+    font-size: 30px;
+    padding-top: 30px;
+    color: hsl(158, 36%, 37%);
+}
+.deleted-price {
+    font-family: 'montserrat';
+    font-weight: 500;
+    font-size: 15px;
+    color: hsl(228, 12%, 48%);
+}
+.special {
+    margin-right: 10px;
+}
+p {
+    color:  hsl(228, 12%, 48%);
+    font-family: 'montserrat';
+    line-height: 1.5;
+}
+.btn{
+    background-color: hsl(158, 36%, 37%);
+    color: hsl(0, 0%, 100%);
+    font-family: 'montserrat';
+    width: 100%;
+}
+.paragraph {
+    margin-top: 20px;
+}
+.btn:hover{
+   background-color: hsl(158, 10%, 37%);
+   color: hsl(0, 0%, 100%);
+}
+
+/* mobile design */
+@media (max-width:450px){
+    .mobile{
+        display: block;
+        width: 100%;
+        border-radius: 10px 10px 0px 0px;
+    }
+    .desktop{
+        display: none;
+    }
+    .description{
+        float: none;
+        width: 100%;
+        padding: 40px 10px;
+        border-radius: 0px 0px 10px 10px;
+    }
+    .product{
+        width: 100%;
+        padding: 20px 10px;
+        margin-top: 0px;
+    }
+    body {
+        padding: 20px;
+    }
+    p{
+        line-height: 1.5;
+        padding-right: 20px;
+    }
+    h1{
+        padding: 20px 0px ;
+    }
+}
